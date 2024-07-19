@@ -1,0 +1,3 @@
+const apiConnexion={
+    getAllCategories:as
+}
