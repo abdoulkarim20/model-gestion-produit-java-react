@@ -38,6 +38,6 @@ export const setupErrorHandLingInterceptor = () => {
                 }
             }
         )
-        isInterceptorSetup = true;
+        
     }
 }

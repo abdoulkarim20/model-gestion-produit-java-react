@@ -27,17 +27,10 @@ export const setupErrorHandLingInterceptor = () => {
                             console.log("Unauthorized");
                             break;
                         case 403:
-                            console.log("Forbidden");
-                        case 404:
-                            console.log("Not found");
-                            break;
-                        default:
-                            console.log("Generic error");
                     }
-                    return Promise.reject(error);
+
                 }
             }
         )
-        isInterceptorSetup = true;
     }
 }

@@ -37,7 +37,7 @@ export const setupErrorHandLingInterceptor = () => {
                     return Promise.reject(error);
                 }
             }
-        )
-        isInterceptorSetup = true;
+        )is
+
     }
 }

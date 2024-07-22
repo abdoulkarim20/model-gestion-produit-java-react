@@ -16,28 +16,15 @@ export const setupErrorHandLingInterceptor = () => {
                                 for (const item of data.errors) {
                                     const property = item.property;
                                     const errorMessage = item.errorMessage;
-                                    if (property && errorMessage) {
-                                        modelStateErrors.push({ property, errorMessage });
+                                    if(property && errorMessage){
+                                        modelStateErrors.push({property,e})
                                     }
                                 }
-                                console.log(modelStateErrors);
                             }
-                            break;
-                        case 401:
-                            console.log("Unauthorized");
-                            break;
-                        case 403:
-                            console.log("Forbidden");
-                        case 404:
-                            console.log("Not found");
-                            break;
-                        default:
-                            console.log("Generic error");
                     }
-                    return Promise.reject(error);
+
                 }
             }
         )
-        isInterceptorSetup = true;
     }
 }

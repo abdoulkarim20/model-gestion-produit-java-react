@@ -31,13 +31,12 @@ export const setupErrorHandLingInterceptor = () => {
                         case 404:
                             console.log("Not found");
                             break;
-                        default:
+                            default:
                             console.log("Generic error");
+                            
                     }
-                    return Promise.reject(error);
                 }
             }
         )
-        isInterceptorSetup = true;
     }
 }

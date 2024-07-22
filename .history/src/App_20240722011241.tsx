@@ -9,7 +9,7 @@ function App() {
 
   const location = useLocation();
   useEffect(() => {
-    setupErrorHandLingInterceptor();
+    setupErrorHandLingInterceptor()
   }, []);
 
   return (

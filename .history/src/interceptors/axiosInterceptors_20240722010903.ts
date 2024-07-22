@@ -34,10 +34,8 @@ export const setupErrorHandLingInterceptor = () => {
                         default:
                             console.log("Generic error");
                     }
-                    return Promise.reject(error);
                 }
             }
         )
-        isInterceptorSetup = true;
     }
 }
